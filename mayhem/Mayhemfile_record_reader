@@ -1,0 +1,11 @@
+project: savantenvs/apollo
+target: record_reader
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_record_reader
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/record_reader/testsuite

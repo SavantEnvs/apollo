@@ -1,0 +1,11 @@
+project: savantenvs/apollo
+target: novatel_parser
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_novatel_parser
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/novatel_parser/testsuite

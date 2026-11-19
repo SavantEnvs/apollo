@@ -1,0 +1,11 @@
+project: savantenvs/apollo
+target: rtklib_rtcm3
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_rtklib_rtcm3
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/rtklib_rtcm3/testsuite

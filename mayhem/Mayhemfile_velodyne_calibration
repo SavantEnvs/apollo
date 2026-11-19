@@ -1,0 +1,11 @@
+project: savantenvs/apollo
+target: velodyne_calibration
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_velodyne_calibration
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/velodyne_calibration/testsuite

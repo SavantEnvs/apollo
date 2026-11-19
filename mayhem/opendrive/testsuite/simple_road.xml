@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenDRIVE>
+  <header revMajor="1" revMinor="0" name="seed" version="1.0" date="2024-01-01" north="37.42" south="37.41" east="-122.01" west="-122.02" vendor="seed">
+    <geoReference><![CDATA[+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs]]></geoReference>
+  </header>
+  <road name="r1" id="road_1" junction="-1" type="CITYROAD">
+    <lanes>
+      <laneSection singleSide="true">
+        <boundaries>
+          <boundary type="leftBoundary">
+            <geometry sOffset="0" x="-122.015" y="37.415" z="0" length="100">
+              <pointSet><point x="-122.015" y="37.415" z="0"/><point x="-122.014" y="37.415" z="0"/></pointSet>
+            </geometry>
+          </boundary>
+          <boundary type="rightBoundary">
+            <geometry sOffset="0" x="-122.015" y="37.41497" z="0" length="100">
+              <pointSet><point x="-122.015" y="37.41497" z="0"/><point x="-122.014" y="37.41497" z="0"/></pointSet>
+            </geometry>
+          </boundary>
+        </boundaries>
+        <center>
+          <lane id="0" uid="road_1_0" type="none" direction="forward" turnType="noTurn">
+            <border virtual="FALSE">
+              <borderType type="solid" color="yellow" sOffset="0"/>
+              <geometry sOffset="0" x="-122.015" y="37.415" z="0" length="100">
+                <pointSet><point x="-122.015" y="37.415" z="0"/><point x="-122.014" y="37.415" z="0"/></pointSet>
+              </geometry>
+            </border>
+          </lane>
+        </center>
+        <right>
+          <lane id="-1" uid="road_1_-1" type="driving" direction="forward" turnType="noTurn">
+            <centerLine>
+              <geometry sOffset="0" x="-122.015" y="37.41498" z="0" length="100">
+                <pointSet><point x="-122.015" y="37.41498" z="0"/><point x="-122.014" y="37.41498" z="0"/></pointSet>
+              </geometry>
+            </centerLine>
+            <border virtual="FALSE">
+              <borderType type="broken" color="white" sOffset="0"/>
+              <geometry sOffset="0" x="-122.015" y="37.41497" z="0" length="100">
+                <pointSet><point x="-122.015" y="37.41497" z="0"/><point x="-122.014" y="37.41497" z="0"/></pointSet>
+              </geometry>
+            </border>
+            <speed max="40"/>
+            <sampleAssociates><sampleAssociate sOffset="0" leftWidth="1.75" rightWidth="1.75"/><sampleAssociate sOffset="88" leftWidth="1.75" rightWidth="1.75"/></sampleAssociates>
+            <roadSampleAssociations><sampleAssociation sOffset="0" leftWidth="1.75" rightWidth="1.75"/></roadSampleAssociations>
+          </lane>
+        </right>
+      </laneSection>
+    </lanes>
+  </road>
+</OpenDRIVE>
